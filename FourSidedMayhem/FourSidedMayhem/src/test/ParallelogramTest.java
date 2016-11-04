@@ -1,0 +1,19 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ParallelogramTest {
+
+	@Test
+	public void testIsParrallelogram() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testGetAreaIntInt() {
+		fail("Not yet implemented");
+	}
+
+}

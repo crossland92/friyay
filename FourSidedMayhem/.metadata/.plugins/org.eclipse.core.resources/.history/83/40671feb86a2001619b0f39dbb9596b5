@@ -5,7 +5,10 @@ public class Parallelogram extends Trapezium {
 
 	public boolean isParrallelogram(Line a, Line b, Line c, Line d){
 		
-		return true;
+		boolean valid = false;	
+
+		
+		return valid;
 	}
 	
 	public Parallelogram(Point a, Point b, Point c, Point d){
