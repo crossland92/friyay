@@ -23,6 +23,8 @@ public class PointTest {
 
 	@Test
 	public void testDistanceTo() {
+		Point point = new Point();
+		
 		fail("Not yet implemented");
 	}
 
@@ -30,5 +32,4 @@ public class PointTest {
 	public void testToString() {
 		fail("Not yet implemented");
 	}
-
 }
