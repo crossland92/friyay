@@ -2,6 +2,9 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 import org.junit.Test;
 
 import main.Point;
@@ -34,7 +37,10 @@ public class PointTest {
 		Point point2 = new Point(3.0, 2.0);
 		
 		double value = point.distanceTo(point2);
-		assertEquals(, "");
+		int numberOfPlacesToRoundTo = 2;
+		double roundedValue = new BigDecimal(value).setScale(numberOfPlacesToRoundTo, RoundingMode.HALF_UP).doubleValue();
+		
+		assertEquals(roundedValue == 7.80, "The distanceTo method returned an incorrect value.");
 	}
 
 	@Test

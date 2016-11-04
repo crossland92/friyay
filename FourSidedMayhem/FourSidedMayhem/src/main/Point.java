@@ -23,7 +23,15 @@ public class Point {
 	}
 	
 	public double distanceTo(Point point) {
-		return 0.0;
+		double x1 = this.x;
+		double x2 = point.getX();
+		double y1 = this.y;
+		double y2 = point.getY();
+		
+		double xDifference = (x1 - x2) * (x1 - x2);
+		double yDifference = (y1 - y2) * (y1 - y2);
+		
+		return Math.sqrt(xDifference + yDifference);
 	}
 
 	@Override
