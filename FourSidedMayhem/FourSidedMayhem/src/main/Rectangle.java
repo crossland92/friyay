@@ -6,8 +6,8 @@ public class Rectangle extends Parallelogram {
 		super(a, b, c, d);	
 	}
 	
-	public static boolean isRectangle(Parallelogram parallelogram) {	
-		return parallelogram instanceof Rectangle ? true : false;
+	public static boolean isRectangle() {	
+		return false;
 	}
 	
 	@Override

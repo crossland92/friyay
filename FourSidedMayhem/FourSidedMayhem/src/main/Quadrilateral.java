@@ -23,11 +23,7 @@ public abstract class Quadrilateral {
 		return perimeter;
 		}
 	
-	public double getArea() {
-		
-		
-		return area;
-	}
+	public abstract double getArea();
 	
 	@Override
 	public String toString() {
@@ -36,12 +32,6 @@ public abstract class Quadrilateral {
 				+ perimeter + ", area=" + area + "]";
 	}
 	
-	
-	
-	
-	
-	
-
 	public int getPoint1() {
 		return point1;
 	}
