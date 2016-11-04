@@ -5,18 +5,19 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import main.Line;
+import main.Parallelogram;
+import main.Point;
 
 public class ParallelogramTest {
 	
 	@Test
 	public void testIsParrallelogram() {
-		Line line1 = new Line(0,0);
-		Line line2 = new Line(0,10);
-		Line line3 = new Line(10,0);
-		Line line4 = new Line(10,10);
+		Line line1 = new Line(new Point(5,5),new Point(11,5));
+		Line line2 = new Line(new Point(11,5),new Point(12,20));
+		Line line3 = new Line(new Point(12,20),new Point(6,20));
+		Line line4 = new Line(new Point(6,20),new Point(5,5));		
 		
-		
-		fail("Not yet implemented");
+		assertEquals(true, Parallelogram.isParrallelogram(line1, line2, line3, line4));
 		
 	}
 
