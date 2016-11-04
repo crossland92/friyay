@@ -1,0 +1,24 @@
+package main;
+
+public class Parallelogram extends Trapezium {
+	
+
+	public boolean isParrallelogram(Line a, Line b, Line c, Line d){
+		
+		boolean valid = false;	
+
+		
+		return valid;
+	}
+	
+	public Parallelogram(){
+		super();
+		
+	}
+	
+	public double getArea(){
+		
+	}
+		
+
+}
