@@ -2,17 +2,18 @@ package main;
 
 public class Line {
 	
-	private int p1;
-	private int p2;
+	private Point p1;
+	private Point p2;
 	
-	public Line (int p1, int p2)
+	public Line (Point p1, Point p2)
 	{
-		
+		this.p1 = p1;
+		this.p2 = p2;
 	}
 	
-	public int getLength()
+	public double getLength()
 	{
-		return 0;
+		return p1.distanceTo(p2);
 	}
 	
 	public int getSlope()
@@ -20,12 +21,12 @@ public class Line {
 		return 0;
 	}
 	
-	public int getPoint1()
+	public Point getPoint1()
 	{
 		return p1;
 	}
 	
-	public int getPoint2()
+	public Point getPoint2()
 	{
 		return p2;
 	}
