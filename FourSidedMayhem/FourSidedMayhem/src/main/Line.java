@@ -16,7 +16,7 @@ public class Line {
 		return p1.distanceTo(p2);
 	}
 	
-	public double getSlope(Point p1, Point p2)
+	public double getSlope()
 	{
 		
 		double xDifference = (p1.getX() - p2.getX());

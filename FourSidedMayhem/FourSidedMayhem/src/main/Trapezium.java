@@ -17,11 +17,21 @@ public class Trapezium extends Quadrilateral {
 	}
 	
 	
-	public boolean isTrapezium(Line l1, Line l2, Line l3, Line l4)
+	public static boolean isTrapezium(Line l1, Line l2, Line l3, Line l4)
 	{
+		System.out.println(Math.abs(l1.getSlope()));
+		System.out.println(Math.abs(l3.getSlope()));
+		if((Math.abs(l1.getSlope()) == Math.abs(l3.getSlope())))
+		{		
+			return true;
+		}
 		
-		
-		return false;
+		else if ((Math.abs(l2.getSlope()) == Math.abs(l4.getSlope()))){
+			return true;
+			
+		} else
+			return false;
+			
 	}
 	
 	
