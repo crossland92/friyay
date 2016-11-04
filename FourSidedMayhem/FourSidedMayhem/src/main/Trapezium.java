@@ -9,12 +9,18 @@ public class Trapezium extends Quadrilateral {
 
 	public Trapezium(Point A, Point B, Point C, Point D) {
 		super(A, B, C, D);
-		// TODO Auto-generated constructor stub
+		Line l1 = new Line(A, B);
+		Line l2 = new Line(B, C);
+		Line l3 = new Line(C, D);
+		Line l4 = new Line(D, A);
+		isTrapezium(l1, l2, l3,l4);
 	}
 	
 	
-	public boolean isTrapezium(Quadrilateral q)
+	public boolean isTrapezium(Line l1, Line l2, Line l3, Line l4)
 	{
+		
+		
 		return false;
 	}
 	
@@ -62,6 +68,13 @@ public class Trapezium extends Quadrilateral {
 	public void setSlantingSide2(double slantingSide2) 
 	{
 		this.slantingSide2 = slantingSide2;
+	}
+
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
