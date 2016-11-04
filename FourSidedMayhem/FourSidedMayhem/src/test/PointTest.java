@@ -20,14 +20,14 @@ public class PointTest {
 	@Test
 	public void testGetX() {
 		Point point = new Point(10.0, 10.0);
-		double retreivedValue = point.getX();
-		assertEquals(retreivedValue == 10.0, "The getX method retreived the wrong value.");
+		double retrievedValue = point.getX();
+		assertEquals(retrievedValue == 10.0, "The getX method retreived the wrong value.");
 	}
 
 	@Test
 	public void testGetY() {
 		Point point = new Point(10.0, 10.0);
-		double retreivedValue = point.getY();
+		double retrievedValue = point.getY();
 		assertEquals(retreivedValue == 10.0, "The getY method retreived the wrong value.");
 	}
 

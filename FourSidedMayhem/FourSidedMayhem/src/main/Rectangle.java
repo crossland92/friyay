@@ -1,8 +1,19 @@
 package main;
 
 public class Rectangle extends Parallelogram {
+
+	public Rectangle() {
+		
+		
+	}
 	
-	public boolean isRectangle() {
-		return false;
+	public static boolean isRectangle(Parallelogram parallelogram) {	
+		return parallelogram instanceof Rectangle ? true : false;
+	}
+	
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return super.getArea();
 	}
 }
