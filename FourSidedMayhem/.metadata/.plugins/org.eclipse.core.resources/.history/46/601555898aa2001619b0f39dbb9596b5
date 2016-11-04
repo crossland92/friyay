@@ -4,17 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import main.Line;
-
 public class ParallelogramTest {
+
+	
 	
 	@Test
 	public void testIsParrallelogram() {
-		Line line1 = new Line(0,0);
-		Line line2 = new Line(0,10);
-		Line line3 = new Line(10,0);
-		Line line4 = new Line(10,10);
-		
+		Line line1 = new Line(0,10);
 		
 		fail("Not yet implemented");
 		

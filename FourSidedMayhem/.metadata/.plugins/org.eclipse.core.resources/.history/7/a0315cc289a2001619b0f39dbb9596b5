@@ -3,11 +3,12 @@ package main;
 public class Rectangle extends Parallelogram {
 
 	public Rectangle(Point a, Point b, Point c, Point d) {
-		super(a, b, c, d);	
+		super();
+		
 	}
 	
-	public static boolean isRectangle() {	
-		return false;
+	public static boolean isRectangle(Parallelogram parallelogram) {	
+		return parallelogram instanceof Rectangle ? true : false;
 	}
 	
 	@Override
