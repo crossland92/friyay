@@ -2,7 +2,9 @@ package main;
 
 public class Parallelogram extends Trapezium {
 	
-
+	
+	
+	
 	public boolean isParrallelogram(){
 		
 		boolean valid = false;	

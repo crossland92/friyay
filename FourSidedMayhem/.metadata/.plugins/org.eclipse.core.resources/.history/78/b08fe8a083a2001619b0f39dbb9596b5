@@ -2,13 +2,14 @@ package main;
 
 public class Parallelogram extends Trapezium {
 	
-
+	
+	
 	public boolean isParrallelogram(){
 		
-		boolean valid = false;	
+		//boolean valid = false;	
 
 		
-		return valid;
+		return true;
 	}
 	
 	public Parallelogram(){
@@ -19,6 +20,9 @@ public class Parallelogram extends Trapezium {
 	public double getArea(){
 		
 	}
-		
+	
+	
+	
+	
 
 }
