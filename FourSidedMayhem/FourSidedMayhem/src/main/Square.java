@@ -2,12 +2,15 @@ package main;
 
 public class Square extends Rectangle {
 	
-	public Square(Point a, Point b, Point c, Point d){
-		super(a, b, c, d);
-		isSquare();
+	public Square(Line a, Line b, Line c, Line d){
+		isSquare(a, b, c, d);
 	}
 	
-	public void isSquare(){
+	public boolean isSquare(Line a, Line b, Line c, Line d){
+		
+		
+		
+		return true;
 		
 	}
 

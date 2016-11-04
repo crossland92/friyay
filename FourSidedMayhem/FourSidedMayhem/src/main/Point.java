@@ -41,4 +41,14 @@ public class Point {
 		double roundedY = new BigDecimal(this.y).setScale(numberOfPlacesToRoundTo, RoundingMode.HALF_UP).doubleValue();
 		return "X:" + roundedX + ", Y:" + roundedY;
 	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+	
+	
 }
