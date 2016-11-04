@@ -1,6 +1,6 @@
 
 public abstract class Quadrilateral {
-	
+	private int point1;
 	private int point2;
 	private int point3;
 	private int point4;
@@ -8,7 +8,7 @@ public abstract class Quadrilateral {
 	private int side2;
 	private int side3;
 	private int side4;
-	private int point1;
+
 	private int perimeter;
 	private int area;
 	
@@ -20,13 +20,12 @@ public abstract class Quadrilateral {
 	public void getPerimeter() {
 	}
 	
-	public void getArea() {
-	}
+	public abstract void getArea();
 	
 	@Override
 	public String toString() {
-		return "Quadrilateral [point2=" + point2 + ", point3=" + point3 + ", point4=" + point4 + ", side1=" + side1
-				+ ", side2=" + side2 + ", side3=" + side3 + ", side4=" + side4 + ", point1=" + point1 + ", perimeter="
+		return "point1=" + point1 + ",Quadrilateral [point2=" + point2 + ", point3=" + point3 + ", point4=" + point4 + ", side1=" + side1
+				+ ", side2=" + side2 + ", side3=" + side3 + ", side4=" + side4 + ",  perimeter="
 				+ perimeter + ", area=" + area + "]";
 	}
 	
