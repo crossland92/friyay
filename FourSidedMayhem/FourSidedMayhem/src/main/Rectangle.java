@@ -7,8 +7,8 @@ public class Rectangle extends Parallelogram {
 		
 	}
 	
-	public static boolean isRectangle(Parallelogram parallelogram) {	
-		return parallelogram instanceof Rectangle ? true : false;
+	public static boolean isRectangle() {	
+		return false;
 	}
 	
 	@Override

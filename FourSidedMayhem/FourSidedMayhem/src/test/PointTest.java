@@ -14,21 +14,21 @@ public class PointTest {
 	@Test
 	public void testPoint() {
 		Point point = new Point(10.0, 10.0);
-		assertEquals(point == null, "A new Point was not created.");
+		assertFalse(point == null);
 	}
 
 	@Test
 	public void testGetX() {
 		Point point = new Point(10.0, 10.0);
 		double retrievedValue = point.getX();
-		assertEquals(retrievedValue == 10.0, "The getX method retreived the wrong value.");
+		assertEquals(retrievedValue, 10.0, 0.00);
 	}
 
 	@Test
 	public void testGetY() {
 		Point point = new Point(10.0, 10.0);
 		double retrievedValue = point.getY();
-		assertEquals(retreivedValue == 10.0, "The getY method retreived the wrong value.");
+		assertEquals(retrievedValue, 10.0, 0.00);
 	}
 
 	@Test
@@ -37,16 +37,12 @@ public class PointTest {
 		Point point2 = new Point(3.0, 2.0);
 		
 		double value = point.distanceTo(point2);
-		int numberOfPlacesToRoundTo = 2;
-		double roundedValue = new BigDecimal(value).setScale(numberOfPlacesToRoundTo, RoundingMode.HALF_UP).doubleValue();
-		
-		assertEquals(roundedValue == 7.80, "The distanceTo method returned an incorrect value.");
+		assertEquals(value, 7.81, 0.00);
 	}
 
 	@Test
 	public void testToString() {
 		Point point = new Point(9.0, 7.0);
-		String value = point.toString();
-		assertEquals(value.equals("X:9.00, Y:7.00"), "The toString method did not return the correct value.");
+		assertEquals(point.toString(), "X:9.00, Y:7.00");
 	}
 }
