@@ -3,13 +3,23 @@ package main;
 public class Parallelogram extends Trapezium {
 	
 
-	public boolean isParrallelogram(Line a, Line b, Line c, Line d){
+	public static boolean isParrallelogram(Line a, Line b, Line c, Line d){
 		
-		return true;
+		
+		if((a.getLength() == c.getLength()) && (b.getLength() == d.getLength()))
+		{		
+			System.out.println(b.getLength());
+			System.out.println(d.getLength());
+			return true;
+		}
+		else
+			return false;
+				
 	}
 	
 	public Parallelogram(Point a, Point b, Point c, Point d){
 		super(a, b, c, d);
+		
 		
 	}
 	
