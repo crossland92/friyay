@@ -1,4 +1,4 @@
-package main;
+/*package main;
 
 public class Square extends Rectangle {
 	
@@ -15,3 +15,4 @@ public class Square extends Rectangle {
 	}
 
 }
+*/
