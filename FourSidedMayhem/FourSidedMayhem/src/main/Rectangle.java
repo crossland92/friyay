@@ -6,13 +6,13 @@ public class Rectangle extends Parallelogram {
 		super(a, b, c, d);	
 	}
 	
-	public static boolean isRectangle() {	
+	private boolean isRectangle() {	
 		return false;
 	}
 	
 	@Override
 	public double getArea() {
 		// TODO Auto-generated method stub
-		return super.getArea();
+		return 0.00;
 	}
 }
