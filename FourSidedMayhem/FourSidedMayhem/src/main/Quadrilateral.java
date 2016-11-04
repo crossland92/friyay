@@ -10,18 +10,23 @@ public abstract class Quadrilateral {
 	private int side3;
 	private int side4;
 	private int point1;
-	private int perimeter;
-	private int area;
+	private double perimeter;
+	private double area;
 	
 	
 	public Quadrilateral(Point A, Point B, Point C, Point D){
 		
 	}
 	
-	public void getPerimeter() {
-	}
+	public double getPerimeter() {
+		
+		return perimeter;
+		}
 	
-	public void getArea() {
+	public double getArea() {
+		
+		
+		return area;
 	}
 	
 	@Override
